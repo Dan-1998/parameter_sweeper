@@ -1,0 +1,20 @@
+[package]
+name = "parameter_sweeper"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "parameter_sweeper"
+path = "src/lib.rs"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ndarray = "0.15.6"
+serde = { version = "1.0.148", features = ["derive"] }
+serde_json = "1.0.89"
+strum = "0.24.1"
+strum_macros = "0.24.3"
